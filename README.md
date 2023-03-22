@@ -3,7 +3,7 @@
 ## Overview
 Predice or Calculate(in real world) the price of used car using parameters such as age, kilo meter run, brand etc... 
 
-Deployed Web App Link: https://praathapj-usedcarpricecalc-carprice-calc-us1aa6.streamlit.app/
+Deployed Web App Link: https://praathapj-usedcarpricecalc-usedcarpricecalc-app-4ujb7q.streamlit.app/
 
 ## Data Collection
 Real world Data is obtained from kaggle website provided by CAR DEKHO company which is entering in used car market. (https://www.kaggle.com/datasets/nehalbirla/vehicle-dataset-from-cardekho)
