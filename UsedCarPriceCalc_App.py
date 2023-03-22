@@ -80,7 +80,7 @@ if st.button("Calculate"):
         minCondVal = minVal
         maxCondVal = minVal + diff
     elif cond == "Very Good":
-        minCondVal = minVal + (2*diff)
+        minCondVal = minVal + diff
         maxCondVal = maxVal - diff
     elif cond == "Excellent":
         minCondVal = maxVal - diff
