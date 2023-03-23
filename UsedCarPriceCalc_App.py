@@ -60,8 +60,8 @@ age = int(curr_year) - int(year)
 # Get engine power
 power = st.text_input("Engine Max Power(bhp) eg: 74 or 87.81 or 182.38")
 # Get engine capacity
-engin_cc = st.text_input("Engine Displacement(cc) eg: 798 or 1200 or 2198")
-engin = int(engin_cc)/1000
+engin = st.text_input("Engine Displacement(cc) eg: 798 or 1200 or 2198")
+#engin = int(float(engin_cc))/1000
 
 # Get car condition
 cond = st.radio("Car Condition",("Good","Very Good","Excellent"),
