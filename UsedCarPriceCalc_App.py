@@ -54,7 +54,8 @@ fuel = st.selectbox("Fuel",carsData['fuel'].unique())
 owner = st.selectbox("Owner",carsData['owner'].unique())
 # Get car age
 curr_year = datetime.date.today().year
-year = st.selectbox("Purchased Year",range(curr_year-20,curr_year+1))
+year = st.selectbox("Purchased Year",[curr_year-i for i in range[0,20]])
+#year = st.selectbox("Purchased Year",range(curr_year-20,curr_year+1))
 age = int(curr_year) - int(year)
 # Get engine power
 power = st.text_input("Engine Power (bhp eg: 74 or 87.81)")
