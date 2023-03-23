@@ -43,11 +43,11 @@ st.write("Instant online quote")
 # Get brand
 make_brand = st.selectbox(label="Brand",options=carsData['make'].unique())
 # Get model
-model = st.selectbox("variant",carsData[carsData['make']==make_brand]["model"].unique())
+model = st.selectbox("Model",carsData[carsData['make']==make_brand]["model"].unique())
 # Get transmission
-trans = st.selectbox("Transmission type",carsData['transmission'].unique())
-# Get km driven
-km = st.selectbox("km driven",carsData['km_driven'].unique())
+trans = st.selectbox("Transmission",carsData['transmission'].unique())
+# Get KM Driven
+km = st.selectbox("Kilometer",carsData['km_driven'].unique())
 # Get fuel 
 fuel = st.selectbox("Fuel",carsData['fuel'].unique())
 # Get previous owners
