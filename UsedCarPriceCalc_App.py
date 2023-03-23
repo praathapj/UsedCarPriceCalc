@@ -47,7 +47,7 @@ model = st.selectbox("Model",carsData[carsData['make']==make_brand]["model"].uni
 # Get transmission
 trans = st.selectbox("Transmission",carsData['transmission'].unique())
 # Get KM Driven
-km = st.selectbox("Kilometer",carsData['km_driven'].unique())
+km = st.selectbox("Kilometer",["{} - {} Km".format((i*10000),((i+1)*10000)) for i in range(0,51)])
 # Get fuel 
 fuel = st.selectbox("Fuel",carsData['fuel'].unique())
 # Get previous owners
