@@ -58,9 +58,10 @@ year = st.selectbox("Purchased Year",[curr_year-i for i in range(0,20)])
 #year = st.selectbox("Purchased Year",range(curr_year-20,curr_year+1))
 age = int(curr_year) - int(year)
 # Get engine power
-power = st.text_input("Engine Power (bhp eg: 74 or 87.81)")
+power = st.text_input("Engine Max Power(bhp) eg: 74 or 87.81 or 182.38")
 # Get engine capacity
-engin = st.text_input("Engine Capacity(In thousand eg: 0.789 or 1.2 or 1.8 )")
+engin_cc = st.text_input("Engine Displacement(cc) eg: 798 or 1200 or 2198")
+engin = int(engin_cc)/1000
 
 # Get car condition
 cond = st.radio("Car Condition",("Good","Very Good","Excellent"),
