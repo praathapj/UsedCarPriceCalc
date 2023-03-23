@@ -15,7 +15,7 @@ def predictCarValue(carBrand,carModel,carDrive,carKM,carFuel,prevOwner,carAge,en
     """
 
     # Type cast variables into required dtype
-    engCap = int(engCap)
+    engCap = int(engCap)/1000  # model needs engine capacity in thousands
     engPow = float(engPow)
     carAge = int(carAge)
 
