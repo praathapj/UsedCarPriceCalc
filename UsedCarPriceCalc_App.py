@@ -15,7 +15,7 @@ def predictCarValue(carBrand,carModel,carDrive,carKM,carFuel,prevOwner,carAge,en
     """
 
     # Type cast variables into required dtype
-    engCap = float(engCap)
+    engCap = int(engCap)
     engPow = float(engPow)
     carAge = int(carAge)
 
@@ -61,7 +61,7 @@ age = int(curr_year) - int(year)
 power = st.text_input("Engine Max Power(bhp) eg: 74 or 87.81 or 182.38")
 # Get engine capacity
 engin = st.text_input("Engine Displacement(cc) eg: 798 or 1200 or 2198")
-engin = float(engin) / 1000
+
 
 # Get car condition
 cond = st.radio("Car Condition",("Good","Very Good","Excellent"),
