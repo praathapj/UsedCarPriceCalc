@@ -92,3 +92,15 @@ if st.button("Calculate"):
     st.success("₹{} Lakhs - ₹{} Lakhs".format(round(minCondVal,2),
                                                          round(maxCondVal,2)))
     st.write("Get your car inspected for exact price")
+
+st.write(" ")
+st.write(" ")
+st.write(" ")
+st.write(" ")
+st.subheader("Click for more information")
+# Source: https://stackoverflow.com/questions/74003574/how-to-create-a-button-with-hyperlink-in-streamlit
+url = 'https://github.com/praathapj/UsedCarPriceCalc'
+
+st.markdown(f'''
+<a href={url}><button style="background-color:GreenYellow;">GitHub</button></a>
+''',unsafe_allow_html=True)
