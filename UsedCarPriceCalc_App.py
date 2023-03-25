@@ -36,7 +36,7 @@ carPrice_model = pickle.load(pickle_in)
 
 # app title
 st.title("Check your car's price")
-st.header("Instant quote for CAR models before year 2022")
+st.header("Instant quote for model prior 2022")
 
 # Get data 
 
@@ -97,7 +97,7 @@ st.write(" ")
 st.write(" ")
 st.write(" ")
 st.write(" ")
-st.subheader("Click for more information")
+st.write("Click for more information")
 # Source: https://stackoverflow.com/questions/74003574/how-to-create-a-button-with-hyperlink-in-streamlit
 url = 'https://github.com/praathapj/UsedCarPriceCalc'
 
