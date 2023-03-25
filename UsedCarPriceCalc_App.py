@@ -36,7 +36,7 @@ carPrice_model = pickle.load(pickle_in)
 
 # app title
 st.title("Check your car's price")
-st.write("Instant online quote (CAR models before year 2022)")
+st.header("Instant online quote (CAR models before year 2022)")
 
 # Get data 
 
