@@ -36,31 +36,31 @@ carPrice_model = pickle.load(pickle_in)
 
 # app title
 st.title("Check your car's price")
-st.header("Instant quote for model prior 2022")
+st.header("Instant quote for model prior 2023")
 
 # Get data 
 
 # Get brand
-make_brand = st.selectbox(label="Brand",options=carsData['make'].unique())
+make_brand = st.selectbox(label="Brand eg: Kia",options=carsData['make'].unique())
 # Get model
-model = st.selectbox("Model",carsData[carsData['make']==make_brand]["model"].unique())
+model = st.selectbox("Model eg: Sonet",carsData[carsData['make']==make_brand]["model"].unique())
 # Get transmission
-trans = st.selectbox("Transmission",carsData['transmission'].unique())
+trans = st.selectbox("Transmission eg: Manual",carsData['transmission'].unique())
 # Get KM Driven
-km = st.selectbox("Kilometer",["{} - {} Km".format((i*10000),((i+1)*10000)) for i in range(0,51)])
+km = st.selectbox("Kilometer eg: 20000 - 30000 Km",["{} - {} Km".format((i*10000),((i+1)*10000)) for i in range(0,51)])
 # Get fuel 
-fuel = st.selectbox("Fuel",carsData['fuel'].unique())
+fuel = st.selectbox("Fuel eg: Petrol",carsData['fuel'].unique())
 # Get previous owners
-owner = st.selectbox("Owner",carsData['owner'].unique())
+owner = st.selectbox("Owner eg: 1st owner",carsData['owner'].unique())
 # Get car age
 curr_year = datetime.date.today().year
-year = st.selectbox("Purchased Year",[curr_year-i for i in range(0,20)])
+year = st.selectbox("Purchased Year eg: 2022",[curr_year-i for i in range(0,20)])
 #year = st.selectbox("Purchased Year",range(curr_year-20,curr_year+1))
 age = int(curr_year) - int(year)
 # Get engine power
-power = st.text_input("Engine Max Power(bhp) eg: 74 or 87.81 or 182.38")
+power = st.text_input("Engine Max Power(bhp) eg: 87.81")
 # Get engine capacity
-engin = st.text_input("Engine Displacement(cc) eg: 798 or 1200 or 2198")
+engin = st.text_input("Engine Displacement(cc) eg: 1200")
 
 
 # Get car condition
