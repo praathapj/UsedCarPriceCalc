@@ -41,9 +41,9 @@ st.header("Instant quote for model prior 2023")
 # Get data 
 
 # Get brand
-make_brand = st.selectbox(label="Brand eg: Kia",options=carsData['make'].unique())
+make_brand = st.selectbox(label="Brand [eg: Kia]",options=carsData['make'].unique())
 # Get model
-model = st.selectbox("Model eg: Sonet",carsData[carsData['make']==make_brand]["model"].unique())
+model = st.selectbox("Model (eg: Sonet)",carsData[carsData['make']==make_brand]["model"].unique())
 # Get transmission
 trans = st.selectbox("Transmission eg: Manual",carsData['transmission'].unique())
 # Get KM Driven
