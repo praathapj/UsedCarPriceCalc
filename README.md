@@ -1,7 +1,7 @@
 # Pre Owned Car Price Calculator
 
 ## Overview
-Predice or Calculate(in real world) the price of used car using parameters such as age, kilo meter run, brand etc... 
+Predice or Calculate the price of used car using parameters such as age, kilo meter run, brand etc... 
 
 Deployed Web App Link: https://praathapj-usedcarpricecalc-usedcarpricecalc-app-4ujb7q.streamlit.app/
 ## Data Collection
